@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>The Complete Node.js Developer Course (3rd Edition) | Udemy</title>
+<meta name="description" content="Learn Node.js by building real-world applications with Node, Express, MongoDB, Mocha, and more!"><meta name="medium" content="mult"><meta name="twitter:card" content="summary_large_image"><meta name="apple-itunes-app" content="app-id=562413829, affiliate-data=ct=Safari_SmartBanner&amp;amp;pt=1240482"><meta name="robots" content="noindex,follow"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><meta name="title" content="The Complete Node.js Developer Course (3rd Edition)"><meta name="google-play-app" content="app-id=com.udemy.android"><meta property="fb:app_id" content="313137469260"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="udemy_com:available" content="1"><meta property="udemy_com:category" content="Development"><meta property="udemy_com:instructor" content="https://www.udemy.com/user/andrewmead/"><meta property="udemy_com:price" content="R$234.99"><meta property="og:title" content="The Complete Node.js Developer Course (3rd Edition)"><meta property="og:url" content="https://www.udemy.com/the-complete-nodejs-developer-course-2/"><meta property="og:description" content="Learn Node.js by building real-world applications with Node, Express, MongoDB, Mocha, and more!"><meta property="og:image" content="https://i.udemycdn.com/course/480x270/922484_52a1_7.jpg"><meta property="og:type" content="udemy_com:course"><meta property="og:site_name" content="Udemy"><meta property="og:locale" content="en_US"><meta name="twitter:domain" content="www.udemy.com"><meta name="twitter:title" content="The Complete Node.js Developer Course (3rd Edition)"><meta name="twitter:url" content="https://www.udemy.com/the-complete-nodejs-developer-course-2/"><meta name="twitter:description" content="Learn Node.js by building real-world applications with Node, Express, MongoDB, Mocha, and more!"><meta name="twitter:image" content="https://i.udemycdn.com/course/480x270/922484_52a1_7.jpg"><meta name="twitter:site" content="@udemy"><meta itemprop="name" content="The Complete Node.js Developer Course (3rd Edition)"><meta itemprop="url" content="https://www.udemy.com/the-complete-nodejs-developer-course-2/"><meta itemprop="description" content="Learn Node.js by building real-world applications with Node, Express, MongoDB, Mocha, and more!"><meta itemprop="image" content="https://i.udemycdn.com/course/480x270/922484_52a1_7.jpg">
+<link type="text/css" href="/staticx/udemy/js/webpack/entry-main-legacy.74de6401472e8d000822.css" rel="stylesheet" />
+<link rel="preconnect" href="https://udemy-images.udemy.com" crossorigin />
+<link rel="dns-prefetch" href="https://udemy-images.udemy.com" crossorigin />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.udemy.com/staticx/udemy/images/v6/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.udemy.com/staticx/udemy/images/v6/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.udemy.com/staticx/udemy/images/v6/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.udemy.com/staticx/udemy/images/v6/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://www.udemy.com/staticx/udemy/images/v6/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.udemy.com/staticx/udemy/images/v6/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.udemy.com/staticx/udemy/images/v6/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.udemy.com/staticx/udemy/images/v6/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="https://www.udemy.com/staticx/udemy/images/v6/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="https://www.udemy.com/staticx/udemy/images/v6/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://www.udemy.com/staticx/udemy/images/v6/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://www.udemy.com/staticx/udemy/images/v6/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="https://www.udemy.com/staticx/udemy/images/v6/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="Udemy" />
+<meta name="msapplication-TileColor" content="#EDECE6" />
+<meta name="msapplication-TileImage" content="https://www.udemy.com/staticx/udemy/images/v6/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="https://www.udemy.com/staticx/udemy/images/v6/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="https://www.udemy.com/staticx/udemy/images/v6/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="https://www.udemy.com/staticx/udemy/images/v6/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="https://www.udemy.com/staticx/udemy/images/v6/mstile-310x310.png" />
+<style>/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OX-hpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format('woff');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OVuhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format('woff');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXuhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format('woff');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUehpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format('woff');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXehpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhv.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50d.woff) format('woff');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFUZ0bf8pkAp6a.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50d.woff) format('woff');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWZ0bf8pkAp6a.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50d.woff) format('woff');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVp0bf8pkAp6a.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50d.woff) format('woff');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWp0bf8pkAp6a.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50d.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50d.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50d.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOX-hpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format('woff');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOVuhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format('woff');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXuhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format('woff');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUehpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format('woff');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXehpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhpKKSTjw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhv.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOX-hpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format('woff');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOVuhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format('woff');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXuhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format('woff');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUehpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format('woff');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXehpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhpKKSTj5PW.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhv.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style>
+<style>
+    .org-logo {
+        background-image: url('https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg');
+    }
+
+    @media (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+        @-ms-viewport { width:device-width; zoom:1.0; }
+        .org-logo {
+            /*retina display*/
+            background-image: url('https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg');
+        }
+    }
+</style>
+<link type="text/css" href="/staticx/udemy/js/webpack/asset-player.c3f0d5dd9e0e98c25761.css" rel="stylesheet" />
+<script type="text/javascript">
+    (function () {
+        var head,
+            regExp = "",
+            version = -1,
+            userAgent = navigator.userAgent;
+
+        if (navigator.appName == 'Microsoft Internet Explorer') {
+            regExp = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+        } else if (navigator.appName == 'Netscape') {
+            regExp = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+        }
+        if (regExp && regExp.exec(userAgent) != null) {
+            version = parseFloat(RegExp.$1);
+        }
+
+        if (version > 9) {
+            head = document.getElementsByTagName("html")[0];
+            head.className = head.className + " ie";
+            if (version == 10) {
+                head.className = head.className + " ie10";
+            }
+        }
+    })();
+</script>
+<script>
+    // Polyfill for IE in order to fix errors related with new Event() and new CustomEvent()
+    // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill
+    (function () {
+      if ( typeof window.CustomEvent === "function" ) return false;
+      function CustomEvent ( event, params ) {
+        params = params || { bubbles: false, cancelable: false, detail: undefined };
+        var evt = document.createEvent( 'CustomEvent' );
+        evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+        return evt;
+       }
+      CustomEvent.prototype = window.Event.prototype;
+      window.CustomEvent = CustomEvent;
+      window.Event = CustomEvent;
+    })();
+
+    // Shim for requestIdleCallback.
+    // https://developers.google.com/web/updates/2015/08/using-requestidlecallback
+    window.requestIdleCallback = window.requestIdleCallback || function (cb) {
+      var start = Date.now();
+      return setTimeout(function () {
+        cb({
+          didTimeout: false,
+          timeRemaining: function () {
+            return Math.max(0, 50 - (Date.now() - start));
+          }
+        });
+      }, 1);
+    };
+</script>
+<script>
+    var UD = UD || {};
+    UD.me = {"encrypted_affiliate_email":"e888ffce14123f5882e9f59d47a9466c325e7201","country":"BR","image_100x100":"https://i.udemycdn.com/user/100x100/anonymous_3.png","name":"Gabriel","initials":"GH","display_name":"Gabriel Hoff","_class":"user","qualaroo_survey_ids":[],"learning_languages":[],"title":"Gabriel Hoff","encrypted_id":"x01eVMk6xg6AIjT2ar25PzSdw==","created":"2017-01-02T18:34:33Z","image_50x50":"https://i.udemycdn.com/user/50x50/anonymous_3.png","email":"gabriel@uptecnologia.com.br","job_title":"","encrypted_affiliate_uid":"081273e6f93870f71878c4ae9165132447c8a19e","percent_coupon_page_enabled":false,"percent_coupon_page_creation_enabled":null,"has_made_paid_purchase":true,"language":"en","locale":"en_US","surname":"Hoff","time_zone":"America/Sao_Paulo","id":28324078,"number_of_courses_purchased":9,"settings":{"interstitialAutoNext":"on","seenCollectionsMenuTooltip":"true","disableAllEmails":"on"}};
+    UD.Config = {"marketplace_country":{"title":"Canada","id":"CA","currency":"cad","iso_code":"CAN","_class":"country"},"env":"PROD","supported_languages":[{"name":"English","lang":"en","locale":"en_US"},{"name":"Deutsch","lang":"de","locale":"de_DE"},{"name":"Espa\u00f1ol","lang":"es","locale":"es_ES"},{"name":"Fran\u00e7ais","lang":"fr","locale":"fr_FR"},{"name":"Bahasa Indonesia","lang":"id","locale":"id_ID"},{"name":"Italiano","lang":"it","locale":"it_IT"},{"name":"\u65e5\u672c\u8a9e","lang":"ja","locale":"ja_JP"},{"name":"\ud55c\uad6d\uc5b4","lang":"ko","locale":"ko_KR"},{"name":"Nederlands","lang":"nl","locale":"nl_NL"},{"name":"Polski","lang":"pl","locale":"pl_PL"},{"name":"Portugu\u00eas","lang":"pt","locale":"pt_BR"},{"name":"Rom\u00e2n\u0103","lang":"ro","locale":"ro_RO"},{"name":"\u0420\u0443\u0441\u0441\u043a\u0438\u0439","lang":"ru","locale":"ru_RU"},{"name":"\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22","lang":"th","locale":"th_TH"},{"name":"T\u00fcrk\u00e7e","lang":"tr","locale":"tr_TR"},{"name":"\u4e2d\u6587(\u7b80\u4f53)","lang":"zh-cn","locale":"zh_CN"},{"name":"\u4e2d\u6587(\u7e41\u9ad4)","lang":"zh-tw","locale":"zh_TW"}],"app_name":"course_taking","features":{"home":{"my_courses":{"revenue":true,"free_label":true,"privacy":true},"signup_cta":true},"ufb_notices":true,"wishlist":true,"shopping_cart":true,"course_landing_page":{"instructor_bio":{"social_links":true,"stats":true,"image":true},"money_back_guarantee":true,"reviews":{"show_user_avatar":true},"incentives":{"access_tv":true,"lifetime_access":true}},"flyout":true,"social_share":{"welcome_popup":true,"email":true},"discount":{"change_alerts":true},"ufb_notices_footer":{"top_com":true},"course_review":{"leave_feedback":true,"clp_review_search":true},"invite":{"alert":true},"report_abuse":true,"intercom_chat":true,"organization":{"manage_satisfaction":{"satisfaction":false},"enterprise":{"onboarding_enabled":false},"auth":{"scim_api_enabled":false,"custom_error_messaging_enabled":true},"assignments":{"due_date":true}},"bundle":{"instructor_bio":{"social_links":true}},"course":{"discussions":{"view":true},"announcements":{"comments":{"view":true}},"refundable":true,"students":{"unenroll":false}},"referral_program_enabled":true,"logged_in_home":{"linkbar_level_2":true,"ufb_ad":false},"gift_course":true,"notice":{"ufb_smart_bar":false,"smart_bar":false,"instructor_bar":false},"zendesk_chat":false,"hello_bar":{"terms":true,"pricing":true,"instructor":false}},"price_country":{"currency_symbol":"R$","currency_charm_amount":-0.01,"_class":"country","usd_currency_formatter":{"decimal":".","scale":2,"pattern":"!#,##0.00","group":",","currency":"usd","symbol":"$","locale":"en_US"},"id":"BR","currency":"brl","currency_decimal_places":2,"currency_formatter":{"decimal":".","scale":2,"pattern":"!#,##0.00","group":",","currency":"brl","symbol":"R$","locale":"en_US"}},"version":"2d26084108e54cf935a363edc2a21a3be923adfc","third_party":{"google_analytics_id_for_ufb_only":"UA-12366301-47","facebook_app_id":"313137469260","s3":{"images":{"base_url":"https://i.udemycdn.com/"},"image_asset":{"bucket_url":"https://udemy-image-web-upload.s3.amazonaws.com","key":"AKIAIOTLFW3HMG563JEA"},"asset":{"bucket_url":"https://udemy-web-upload-transitional.s3.amazonaws.com","key":"AKIAIOTLFW3HMG563JEA"}},"stripe_publishable_key":"pk_live_xOuIgZiF7hb3wSwFSAOz3dRm","raven_dsn":"https://369c830fbf534485a068ab919d71b80d@app.getsentry.com/38617","user_stripe_publishable_key":"pk_live_xOuIgZiF7hb3wSwFSAOz3dRm","paypal":{"authend":"live","appid":"ASRJrkbBfTwvxWNTn-QRakeimIbsjmBuK5hWj4zq3QJL46CKIYNb-RiKjrTSe-2iZ-EFrCCuXGZTxHjY","returnurl":"https://www.udemy.com/user/paypal-login-return"},"branch_metrics":{"ios_ufb_download_url":"http://ude.my/ios-ufb","android_download_url":"http://ude.my/android","android_ufb_download_url":"http://ude.my/android-ufb","ios_download_url":"http://ude.my/ios"},"google_analytics_id":"UA-12366301-1","zendesk":{"refund_form_id":406368},"google_tag_manager_id":"GTM-7BF3X","uft_stripe_publishable_key":"pk_live_dCyHJcZsk8NaNwx1PiRSpqqq","intercom":{"app_id":"sehj53dd"},"sift_science_account":false,"filestack":{"filepicker_misc_extensions":[".gif",".jpg",".jpeg",".png",".rar",".zip",".pdf"],"key":"A0EHlHYkEQbCTpDvxEwAYz","video_extensions":[".avi",".mpg",".mpeg",".flv",".mov",".m2v",".m4v",".mp4",".rm",".ram",".vob",".ogv",".webm",".wmv"],"s3_fineuploader_misc_extensions":[".ic4",".pfr",".3dml",".rcprofile",".viv",".opf",".rsm",".eot",".pqa",".bh2",".odi",".btif",".portpkg",".tcap",".wav",".uvvf",".fla",".aiff",".lbd",".cla",".pl",".msl",".ssw",".sml",".atomsvc",".fxp",".ods",".aifc",".p7m",".uvvm",".apr",".uvvx",".at3",".jpm",".so",".tra",".cc",".anx",".kml",".silo",".otf",".zone",".pki",".spot",".atomdeleted",".fxm",".edx",".dart",".mxi",".cdxml",".gtw",".qbo",".cdmia",".moml",".gex",".ras",".tuc",".oa3",".jpg",".qwd",".mts",".aal",".oxps",".ogv",".ppt",".fcdt",".xml",".lasxml",".conf",".rnd",".xlw",".scq",".smi",".qxt",".pvb",".ecelp4800",".7",".vcx",".ecelp9600",".m21",".grxml",".g3",".vcd",".azs",".ic6",".spf",".rdf",".exi",".cdmid",".wspolicy",".quiz",".jpeg",".rsheet",".sjp",".cil",".uvx",".xyz",".tcl",".x3d",".midi",".mmr",".xdssc",".bmp",".otp",".pcap",".h",".xo",".xmt_bin",".rtf",".xlb",".asx",".zmm",".xif",".vcf",".cuc",".xyze",".mp1",".igl",".dr",".curl",".cml",".apk",".s1m",".m4v",".kwd",".teacher",".stf",".123",".sql",".crtr",".movie",".pptx",".wmc",".sam",".pfx",".icf",".igm",".mov",".mp4",".pgm",".siv",".emma",".tpt",".rm",".scd",".cdkey",".gbr",".xla",".uvm",".gz",".669",".uvvi",".pod",".ic7",".cap",".rdz",".hbci",".gmx",".psb",".qca",".ps",".map",".smh",".xpx",".qxd",".box",".json-patch",".cdf",".td",".cw",".ppm",".ttf",".wmlsc",".qt",".ic3",".plb",".ors",".teiCorpus",".paw",".ngdat",".tfi",".xsl",".tcu",".mads",".mpy",".wps",".mhtml",".u8msg",".ief",".odb",".ipk",".et3",".ots",".ait",".sru",".ddd",".5",".s3m",".esf",".evw",".cmp",".kcm",".rpst",".vcard",".str",".mtm",".obj",".prc",".quox",".tao",".cdmiq",".cdbcmsg",".nbp",".hps",".mod",".xlim",".p10",".dd2",".xdw",".ppkg",".wbxml",".ktx",".ustar",".spl",".cii",".xfdl",".gv",".atomcat",".dotm",".hpid",".evc",".ppam",".tex",".oth",".cdmic",".sis",".dcm",".iso",".nws",".sgi",".xca",".axa",".odc",".f90",".fst",".ic1",".c4f",".xel",".xmls",".p12",".2",".text",".vpm",".jpg2",".pyc",".sldm",".3g2",".ic8",".mxml",".model-inter",".uvvv",".ccxml",".dtd",".ice",".scs",".mpd",".pps",".dna",".auc",".ext",".uvvg",".jpf",".dd",".oga",".spp",".rip",".class",".clkt",".odd",".uvg",".pya",".mp21",".sv4cpio",".spd",".ez",".tr",".mc1",".mb",".les",".wk1",".art",".sppt",".azf",".acu",".tif",".asf",".azv",".xltx",".roa",".wax",".dotx",".rpss",".uvz",".lzh",".jp2",".docm",".uvv",".bdm",".mcd",".inkml",".nml",".pkg",".vsc",".hxx",".iota",".nsg",".mseed",".twd",".ipfix",".ns4",".csh",".xwd",".taglet",".o",".spdf",".crl",".jad",".xbd",".evb",".css",".epub",".8",".oas",".ink",".ac3",".wvx",".wqd",".dot",".xz",".dpgraph",".mml",".mqy",".scm",".sid",".oti",".fnc",".potx",".nc",".ic0",".mus",".tei",".or3",".mxu",".c4u",".dp",".hvd",".mpf",".fly",".i2g",".pgn",".grv",".fo",".doc",".xlsb",".list3820",".aa3",".provn",".entity",".plf",".ns2",".dpkg",".uvu",".mp2",".rp9",".finf",".ccc",".zir",".roff",".st",".stif",".tpl",".wiz",".dms",".jar",".tau",".atx",".sema",".png",".link66",".bmml",".xslt",".ns3",".tgz",".smv",".fsc",".msm",".study-inter",".nnd",".gtar",".vbk",".pil",".or2",".flw",".sxl",".sldx",".swf",".dor",".xhtml",".clkk",".l16",".ts",".xvml",".sfd-hdstx",".cpio",".wgt",".dm",".igs",".s1p",".x_b",".ntf",".log",".yang",".gxt",".uvvp",".clkx",".tur",".otg",".img",".sh",".mbk",".o4a",".distz",".vxml",".sc",".notebook",".koz",".msf",".ppd",".si",".mht",".smp",".susp",".pwn",".ndc",".ppsm",".gif",".ac",".woff",".sgm",".sdoc",".package",".ttl",".mdc",".pre",".fg5",".uoml",".g2w",".spx",".plj",".odm",".pdf",".mesh",".semf",".726",".copyright",".bkm",".jpgm",".jisp",".torrent",".dmp",".mlp",".fits",".qxb",".wma",".upa",".pm",".fts",".texinfo",".msty",".spng",".gsheet",".osf",".cdmio",".semd",".geo",".dis",".ult",".sem",".ndl",".xav",".wbs",".gim",".mmd",".3gpp2",".wpd",".uvva",".dvi",".texi",".uvt",".3gp",".srx",".uric",".ami",".plc",".rdf-crypt",".m4u",".bed",".lostxml",".see",".nim",".py",".win",".mrcx",".s1q",".uris",".mail",".stc",".xltm",".dwf",".lbe",".dxr",".es3",".chrt",".ics",".saf",".tiff",".xer",".3gpp",".spq",".ksh",".mods",".awb",".sl",".sdp",".hal",".wtb",".skt",".flac",".bar",".pptm",".xlc",".p8",".pgb",".wm",".uvh",".u8mdn",".asc",".edm",".nds",".sm",".uva",".xdf",".ivp",".mfm",".pls",".dls",".wsc",".s1a",".zirz",".irp",".g3w",".lbc",".yin",".rld",".qwt",".appcache",".mms",".mmf",".pyv",".fpx",".seml",".lwp",".t",".sla",".m2v",".spo",".svg",".ecelp7470",".hpi",".cif",".c11amz",".jpe",".igx",".html",".ma",".skm",".wcm",".lostsyncxml",".js",".webm",".mpe",".acutc",".s3df",".skd",".orq",".mft",".dcf",".s1w",".xpw",".bcpio",".pcl",".eps",".dae",".jfif",".xpdl",".qps",".mpm",".dpg",".uri",".cl",".xcs",".gqf",".slt",".mp3",".xar",".wpl",".dvb",".dwg",".dir",".rtx",".tsv",".sgif",".uvvt",".xdm",".tlclient",".xlm",".uo",".svc",".fe_launch",".mpkg",".tsd",".vwx",".me",".dist",".afp",".manifest",".s14",".rng",".sdf",".smht",".cxx",".bin",".xvm",".xns",".iges",".tar",".org",".smil",".ltf",".ivu",".gsm",".kon",".psd",".c",".ptid",".fbs",".svgz",".djv",".sdkd",".lha",".bat",".pyo",".a",".provx",".atom",".lvp",".apxml",".mgz",".uvf",".kil",".ez2",".fzs",".rs",".mjp2",".gre",".pbd",".itp",".mpeg",".m4a",".sac",".u8dsn",".ggb",".g\u00b3",".sandboxed",".rlc",".swi",".kne",".mgp",".webp",".acn",".smov",".uvvz",".aif",".irm",".jtd",".relo",".frm",".p7c",".hvp",".xlam",".c4p",".xbm",".zfo",".wml",".wrl",".sfs",".cellml",".rct",".tsa",".ic5",".dvc",".pti",".s1g",".ic2",".odt",".bz2",".man",".uvs",".flx",".omg",".xhvml",".pwz",".nnw",".vbox",".hdf",".davmount",".ism",".u8hdr",".rst",".rpm",".wmv",".wk4",".soc",".hbc",".xlt",".ez3",".clkp",".zaz",".1905.1",".tmo",".smzip",".uvvu",".acc",".hqx",".axv",".esa",".tag",".hpgl",".pnm",".xhtm",".thmx",".m15",".xlsx",".sxi",".wmlc",".ahead",".vew",".amr",".shar",".sxg",".clkw",".pskcxml",".bmi",".ufdl",".snd",".chm",".c11amc",".odp",".sus",".xdp",".sxls",".uvvs",".xmt_txt",".ifb",".hh",".ifm",".odg",".cpl",".mpp",".aep",".kfo",".gac",".emm",".ott",".aso",".jpx",".unityweb",".fdf",".ims",".oa2",".bpd",".ddf",".6",".kmz",".tsr",".nitf",".kpr",".sub",".twds",".mag",".pgp",".kar",".msd",".wif",".vsd",".uvp",".dsc",".cab",".avi",".fm",".sjpg",".wmls",".dataless",".vtu",".listafp",".jlt",".ppa",".uni",".ent",".btf",".icd",".djvu",".seed",".mxf",".dcr",".cnd",".xlsm",".smp3",".s11",".tsq",".ufd",".jnlp",".tnef",".med",".xpr",".pml",".psid",".3dm",".json",".uvvh",".qxl",".rl",".wadl",".sieve",".sv4crc",".request",".tga",".csv",".sse",".pot",".uvi",".eol",".ktr",".dfac",".efif",".xht",".soa",".xpm",".rgbe",".ica",".fti",".sfd",".hvs",".mseq",".mets",".stm",".n3",".slc",".xls",".ksp",".flv",".stml",".wlnk",".daf",".cst",".fxpl",".txd",".gram",".s1n",".tnf",".sig",".fit",".sxm",".gtm",".xsm",".ggt",".o4v",".stk",".spn",".nb",".es",".dtshd",".pdb",".docx",".3",".metalink",".otc",".mwf",".msh",".zip",".std",".gqs",".potm",".mif",".src",".p7s",".mrc",".icm",".mxmf",".xop",".mpg4",".scsf",".dts",".hdr",".odf",".txf",".dxp",".vrml",".qcall",".ep",".dll",".pkipath",".slaz",".oprc",".s1e",".lmp",".xspf",".wks",".latex",".wg",".rgb",".shf",".dssc",".xfd",".mxs",".smo",".rep",".umj",".crx",".mpn",".imp",".prz",".qfx",".rq",".ktz",".utz",".pack",".ppsx",".xul",".m3u",".ogg",".xps",".vis",".ram",".rms",".vss",".abc",".pbm",".fdt",".stw",".ccmp",".sswf",".ai",".sit",".mpc",".nsh",".wbmp",".iif",".nlu",".ms",".tree",".nns",".cer",".eml",".kia",".vsw",".mpga",".mdi",".m",".pkd",".uvvd",".smpg",".wv",".joda",".wsdl",".gdl",".s1h",".qcp",".knp",".drc",".cww",".ra",".ei6",".oda",".fvt",".ftc",".m3u8",".csp",".kom",".uvd",".1",".mj2",".sic",".htm",".skp",".sgml",".n-gage",".sxw",".rif",".atc",".m1v",".icc",".mxl",".oxt",".vsf",".fcs",".karbon",".kpt",".sdkm",".wdb",".htke",".preminet",".etx",".4",".sxd",".cpt",".wmx",".sti",".s1j",".cgm",".mid",".txt",".cryptonote",".xsd",".c4d",".dxf",".wk3",".mpa",".dsm",".ghf",".xpi",".mpt",".sisx",".sms",".vst",".ico",".jam",".ogx",".ter",".sxc",".pseg3820",".au",".gph",".tfx",".sdo",".ssml",".vcg",".flo",".ssf",".cpkg",".c4g",".cdy",".meta4",".t38",".kwt",".mwc",".miz",".mpg",".xfdf",".x_t",".enw",".xsf",".lrm",".rss",".exe",".nsf",".cmc",".qam",".rnc",".el",".mbox",".opus"],"source_code_extensions":[".rb",".py"],"presentation_extensions":[".pdf"],"audio_extensions":[".mp3",".wav"]},"pusher":{"coding_exercise_event":"coding-exercise-evaluated","key":"825910825f8199bd5b21"},"google_analytics_id_for_course_taking":"UA-12366301-45"},"js_bundle":"modern","brand":{"is_feed_commenting_enabled":true,"is_add_reviews_enabled":true,"product_logo_light":"https://www.udemy.com/staticx/udemy/images/v6/logo-coral-light.svg","is_discussions_enabled":true,"is_share_on_slack_enabled":false,"is_team":false,"is_sso_enabled":false,"is_import_courses_enabled":true,"_class":"brand","is_share_to_workplace_enabled":false,"is_third_party_marketing_enabled":true,"product_logo":"https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg","product_name":"Udemy","is_udemy":true,"title":"Udemy","logo_url_2x":"https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg","is_messaging_enabled":true,"is_government":false,"has_organization":false,"identifier":"udemy","is_profile_functions_enabled":true,"organization":false,"link_bar_nav_list_id":"ud-link-bar","is_social_sharing_enabled":true,"is_autoshow_cc_enabled":true,"is_external_sources_enabled":true,"is_teaching_enabled":true},"url":{"to_images":"https://www.udemy.com/staticx/udemy/images/","to_root":"https://www.udemy.com/","to_js":"https://www.udemy.com/staticx/udemy/js/","to_page_events":"https://page-events-ustats.udemy.com/","to_app":"https://www.udemy.com/"}};
+    UD.site_stats = {"default":{"num_students":24,"num_courses":100000,"num_topics":2000,"num_instructors":35000},"organizations":{"num_courses":3000}};
+    UD.visiting = {"visitor_uuid":"3683b703570c469b9bc4b710676ed7e3","is_first_time_visitor":false,"first_visit_time":"2019-07-02T00:50:55.338Z"};
+    UD.tracking = {"collector_url":"https://event-collector.udsrv.com/api/event","tracking_enabled":true,"tracking_id":"8f8be037b18d490c92c11fcd0c0e9ab5"};
+</script>
+<script>
+    UD.request = {
+        locale: 'en_US',
+        third_party_location: '/the-complete-nodejs-developer-course-2/learn/lecture/13729046',
+        language_simple_english_title: 'English',
+        termsBarType: '',
+        termsBarUrls: "",
+        isMobile: false,
+        isTablet: false,
+        isPC: true,
+        serverTimestamp: '2019-07-13T00:09:31.619188-03:00',
+        clientTimestamp: new Date().toISOString(),
+        
+            extraIntercomData: {"hide_default_launcher":true},
+        
+        experiment: {"brwct":{"2202":{"values":{"rank_by":"highest_rated"},"state":"recorded","variant":5558}},"pay":{"1944":{"values":{"reminder-enabled":true},"state":"recorded","variant":4884}},"hm":{"2104":{"values":{"successful_onboarding_signup__next_parameters":{"next":"/onboarding/for-you/"}},"state":"recorded","variant":5306}},"brwt":{"2126":{"values":{"show_contextual_recos":"true"},"state":"recorded","variant":5370}},"sw":{"1696":{"values":{"suppress_fbt_discount":true},"state":"recorded","variant":4264},"2008":{"values":{"ufb_header_ad":{"show_ad":true,"drop_bell":false}},"state":"recorded","variant":5062},"2106":{"values":{"modal_add_to_cart__is_shown":true,"showAddToCartOnFixedBuyBar":true,"mobile_card_style":"exp-mobile-card-small","isAddToCartAnimated":false,"social_signup_enabled":true,"email_signup_button_enabled":true,"is_optimized_cart":true},"state":"recorded","variant":5316},"2200":{"values":{"ufb_copy_variant":"b"},"state":"recorded","variant":5550},"2150":{"values":{},"state":"recorded","variant":5426}},"lihp":{"2170":{"values":{"show_recently_viewed_wishlisted":"true"},"state":"recorded","variant":5478}},"tgt":{"19826":{"values":{},"state":"recorded","variant":19828}}},
+    };
+</script>
+<script>
+    if (window.performance && typeof window.performance.mark === 'function'
+            && typeof window.performance.measure === 'function') {
+        UD.performance = {
+            _trackedResources: [],
+            _eventNamePrefix: 'UD-',
+            trackResourceTiming: function (resourceName, resourceUrl) {
+                this._trackedResources.push({ name: resourceName, url: resourceUrl });
+            },
+            mark: function (name) {
+                window.performance.mark(this._eventNamePrefix + name);
+            },
+            start: function (name) {
+                window.performance.mark(this._eventNamePrefix + '_' + name + '-start');
+            },
+            end: function (name) {
+                var endMark = this._eventNamePrefix + '_' + name + '-end';
+                var startMark = this._eventNamePrefix + '_' + name + '-start';
+                window.performance.mark(endMark);
+                
+                if (window.performance.getEntriesByName(startMark).length > 0) {
+                    window.performance.measure(this._eventNamePrefix + name, startMark, endMark);
+                }
+            },
+            sync: function() {
+                
+                window.dispatchEvent(new CustomEvent('syncPerf',
+                    { detail: { trackedResources: this._trackedResources } }
+                ));
+            }
+        };
+    } else {
+        UD.performance = {
+            trackResourceTiming: Function.prototype,
+            mark: Function.prototype,
+            start: Function.prototype,
+            end: Function.prototype,
+            sync: Function.prototype
+        };
+    }
+</script>
+<script>
+            UD.browse = {
+                navigation_categories: [{"title":"Development","absolute_url":"/courses/development/","descriptions":[{"text":"Learn to code or build websites from scratch with these online courses. Topics include web development, IOS mobile apps, android to game development and ecommerce. ","type":"seo"},{"text":"Learn to build IOS, Android mobile apps, or develop websites in HTML, CSS and Javascript. Programming courses in Java, C++, Ruby on Rails, Python and many more.","type":"web"}],"icon_name":"development","id":288,"title_cleaned":"development","children":[{"descriptions":[{"text":"Online courses for building websites from scratch using popular tools and languages like HTML, CSS, Python, JavaScript, and more.","type":"seo"},{"text":"Learn web development skills to build fully functioning websites.","type":"web"}],"absolute_url":"/courses/development/web-development/","title":"Web Development","icon_name":"web-development","id":8,"title_cleaned":"web-development","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn how to design, build, and publish iOS and Android mobile apps from scratch using a variety of tools, such as XCode, Swift, and Java.","type":"seo"},{"text":"Learn how to build your mobile app for iOS, Android and Kindle. ","type":"web"}],"absolute_url":"/courses/development/mobile-apps/","title":"Mobile Apps","icon_name":"mobile-apps","id":10,"title_cleaned":"mobile-apps","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online classes to master popular programming languages, such as Java, Ruby, C#, PHP, C++, JQuery, and more. Beginner to advanced courses available.","type":"seo"},{"text":"Learn new languages or sharpen your exisiting skills with courses ranging from Intro to Python, Advanced Java, PHP and Ruby.","type":"web"}],"absolute_url":"/courses/development/programming-languages/","title":"Programming Languages","icon_name":"programming-languages","id":12,"title_cleaned":"programming-languages","children":null,"type":"subcategory"},{"title":"Game Development","absolute_url":"/courses/development/game-development/","descriptions":[{"text":"Enroll in online courses to learn game development from home. Master popular tools, such as Unity and C++, to create original games and apps.","type":"seo"}],"icon_name":"game-development","id":14,"title_cleaned":"game-development","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online classes to become a database expert. Course options range from basic SQL to Hadoop, Oracle, and more. Beginner to advanced courses available.","type":"seo"},{"text":"Become a database expert with these courses ranging from basic SQL to Hadoop and Oracle mastery.","type":"web"}],"absolute_url":"/courses/development/databases/","title":"Databases","icon_name":"databases","id":16,"title_cleaned":"databases","children":null,"type":"subcategory"},{"title":"Software Testing","absolute_url":"/courses/development/software-testing/","descriptions":[{"text":"Take online courses covering software testing techniques and best practices. Learn Selenium, Java, web application testing, mobile app testing, and more.","type":"seo"}],"icon_name":"software-testing","id":18,"title_cleaned":"software-testing","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take courses online and learn software engineering best practices. Learn the ins and outs of APIs, Agile, Scrum, and more.","type":"seo"}],"absolute_url":"/courses/development/software-engineering/","title":"Software Engineering","icon_name":"software-engineering","id":20,"title_cleaned":"software-engineering","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses to learn a variety of web and app development tools. Master the use of tools like Git, Conducttr, JIRA, APEX, Docker, and more.","type":"seo"}],"absolute_url":"/courses/development/development-tools/","title":"Development Tools","icon_name":"development-tools","id":362,"title_cleaned":"development-tools","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses to learn popular e-commerce platforms, such as Magento and BigCommerce. Learn how to build, configure, and manage an e-commerce site.","type":"seo"},{"text":"Learn how to build, configure and manage your E-Commerce website. ","type":"web"}],"absolute_url":"/courses/development/e-commerce/","title":"E-Commerce","icon_name":"e-commerce","id":354,"title_cleaned":"e-commerce","children":null,"type":"subcategory"}],"type":"category"},{"title":"Business","absolute_url":"/courses/business/","descriptions":[{"text":"The ultimate online business and entrepreneurship courses collection. From starting a company to marketing, advertising, finance and more. Start learning today.","type":"seo"},{"text":"Learn how to start a business, grow a business, get promoted, and much more.","type":"web"}],"icon_name":"business","id":268,"title_cleaned":"business","children":[{"title":"Finance","absolute_url":"/courses/business/finance-courses/","descriptions":[{"text":"Financial management and accounting courses to keep you at the top of your business finances. Learn how to master your business finance skills.","type":"seo"},{"text":"Master financial modeling, accounting and other finance related skills.","type":"web"}],"icon_name":"finance","id":24,"title_cleaned":"finance-courses","children":null,"type":"subcategory"},{"title":"Entrepreneurship","absolute_url":"/courses/business/entrepreneurship/","descriptions":[{"text":"Take online courses to learn what it takes to be a successful entrepreneur. Learn how to raise funds, create a plan, and start and manage your own business.","type":"seo"},{"text":"Achieve your entrepreneurship dreams with courses on: lean start-up, developing a business plan, and launching your venture.","type":"web"}],"icon_name":"entrepreneurship","id":26,"title_cleaned":"entrepreneurship","children":null,"type":"subcategory"},{"title":"Communications","absolute_url":"/courses/business/communications/","descriptions":[{"text":"Enroll in online communications courses that will teach you how to speak and write with power and clarity so you can succeed in business or creative fields.","type":"seo"},{"text":"Communicate better with these powerful courses in written and verbal communications.","type":"web"}],"icon_name":"communications","id":28,"title_cleaned":"communications","children":null,"type":"subcategory"},{"title":"Management","absolute_url":"/courses/business/management/","descriptions":[{"text":"Our business and management courses will show you how to be a more effective leader, no matter your industry. Solve problems and get results at all levels.","type":"seo"},{"text":"Take your management skills to the next level with these course in negotiation, leadership, people management and more.","type":"web"}],"icon_name":"management","id":30,"title_cleaned":"management","children":null,"type":"subcategory"},{"title":"Sales","absolute_url":"/courses/business/sales/","descriptions":[{"text":"Become a successful salesperson by learning what it takes to attract customers and close sales. Master persuasion, lead generation, sales calls, and meetings.","type":"seo"},{"text":"Improve your sales skills with courses on sales promotion, mastering sales calls, mastering sales meetings, sales persuasion skills, cold calling skills, closing sales and more.","type":"web"}],"icon_name":"sales","id":32,"title_cleaned":"sales","children":null,"type":"subcategory"},{"title":"Strategy","absolute_url":"/courses/business/strategy/","descriptions":[{"text":"Become a master strategist with courses on the following: business strategy, performance innovation, marketing strategy, customer loyalty and more.","type":"seo"},{"text":"Become a master strategist with courses on the following: business strategy, performance innovation, marketing strategy, customer loyalty and more.","type":"web"}],"icon_name":"strategy","id":34,"title_cleaned":"strategy","children":null,"type":"subcategory"},{"descriptions":[{"text":"Master business operations to successfully manage a business of any size. Learn how to hire, outsource, plan, provide customer service, and more.","type":"seo"}],"absolute_url":"/courses/business/operations/","title":"Operations","icon_name":"operations","id":36,"title_cleaned":"operations","children":null,"type":"subcategory"},{"descriptions":[{"text":"Master Project Management with courses on: PMI RMP, PRINCE Foundation certification, software project management, CBAP, project planning and execution.","type":"seo"},{"text":"Master Project Management with courses on: PMI RMP, PRINCE Foundation certification, software project management, CBAP, project planning and execution.","type":"web"}],"absolute_url":"/courses/business/project-management/","title":"Project Management","icon_name":"project-management","id":38,"title_cleaned":"project-management","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn the ins and outs of business law so you can properly set up and protect your company through contracts, trademarks, copyrights, and more.","type":"seo"}],"absolute_url":"/courses/business/business-law/","title":"Business Law","icon_name":"business-law","id":40,"title_cleaned":"business-law","children":null,"type":"subcategory"},{"descriptions":[{"text":"Master business analytics and data analysis to understand your business better and create strategies for growth. Learn how to collect and work with data.","type":"seo"}],"absolute_url":"/courses/business/data-and-analytics/","title":"Data \u0026 Analytics","icon_name":"data-and-analytics","id":44,"title_cleaned":"data-and-analytics","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn how to set up and manage a successful home-based business in the industry of your choice so you can make money working from home doing what you enjoy.","type":"seo"}],"absolute_url":"/courses/business/home-business/","title":"Home Business","icon_name":"home-business","id":46,"title_cleaned":"home-business","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn human resources with courses ranging from oracle human capital management to attracting, hiring and retaining the best people.","type":"seo"},{"text":"Learn human resources with courses ranging from oracle human capital management to attracting, hiring and retaining the best people.","type":"web"}],"absolute_url":"/courses/business/human-resources/","title":"Human Resources","icon_name":"human-resources","id":48,"title_cleaned":"human-resources","children":null,"type":"subcategory"},{"descriptions":[{"text":"Revamp your career by learning how to break into new industries, from healthcare and music, to veterinary medicine, event planning, and more.","type":"seo"},{"text":"Break into new industries from healthcare, to veterinary medicine or event planning.","type":"web"}],"absolute_url":"/courses/business/industry/","title":"Industry","icon_name":"industry","id":50,"title_cleaned":"industry","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn how to create various forms of media, from songs and videos, to books and articles, so you can begin an exciting new career in publishing.","type":"seo"},{"text":"Master new forms of publishing from e-books to kindle publishing or writing blogs. ","type":"web"}],"absolute_url":"/courses/business/media/","title":"Media","icon_name":"media","id":52,"title_cleaned":"media","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online real estate courses to learn about careers in real estate, how to invest in properties, and how to flip homes to earn higher profits.","type":"seo"}],"absolute_url":"/courses/business/real-estate/","title":"Real Estate","icon_name":"real-estate","id":58,"title_cleaned":"real-estate","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn what it takes to succeed in all aspects of business, from acquiring funds and grants, to creating a strong online presence.","type":"seo"}],"absolute_url":"/courses/business/other-business/","title":"Other","icon_name":"line-star","id":60,"title_cleaned":"other-business","children":null,"type":"subcategory"}],"type":"category"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/","title":"Finance \u0026 Accounting","icon_name":"finance","id":328,"title_cleaned":"finance-and-accounting","children":[{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/accounting-bookkeeping/","title":"Accounting \u0026 Bookkeeping","icon_name":"sales","id":530,"title_cleaned":"accounting-bookkeeping","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/compliance/","title":"Compliance","icon_name":"it-certification","id":532,"title_cleaned":"compliance","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/cryptocurrency-and-blockchain/","title":"Cryptocurrency \u0026 Blockchain","icon_name":"cryptocurrency-and-blockchain","id":534,"title_cleaned":"cryptocurrency-and-blockchain","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/economics/","title":"Economics","icon_name":"productivity","id":536,"title_cleaned":"economics","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/finance-management/","title":"Finance","icon_name":"personal-finance","id":540,"title_cleaned":"finance-management","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/finance-certification-and-exam-prep/","title":"Finance Cert \u0026 Exam Prep","icon_name":"test-prep","id":542,"title_cleaned":"finance-certification-and-exam-prep","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/financial-modeling-and-analysis/","title":"Financial Modeling \u0026 Analysis","icon_name":"analytics-and-automation","id":544,"title_cleaned":"financial-modeling-and-analysis","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/investing-and-trading/","title":"Investing \u0026 Trading","icon_name":"investing-and-trading","id":546,"title_cleaned":"investing-and-trading","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/money-management-tools/","title":"Money Management Tools","icon_name":"money-management-tools","id":548,"title_cleaned":"money-management-tools","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/taxes/","title":"Taxes","icon_name":"office-productivity","id":550,"title_cleaned":"taxes","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/finance-and-accounting/other-finance-and-accounting/","title":"Other Finance \u0026 Economics","icon_name":"finance","id":552,"title_cleaned":"other-finance-and-accounting","children":null,"type":"subcategory"}],"type":"category"},{"title":"IT \u0026 Software","absolute_url":"/courses/it-and-software/","descriptions":[{"text":"The ultimate online IT and software courses. Prepare for certification exams or study the latest operating system architectures. ","type":"seo"},{"text":"Prepare for CCNA, ITIL and other certifications. Learn cutting edge skills like AWS or virtualization.","type":"web"}],"icon_name":"it-and-software","id":294,"title_cleaned":"it-and-software","children":[{"title":"IT Certification","absolute_url":"/courses/it-and-software/it-certification/","descriptions":[{"text":"Take courses online to prepare to pass IT certification exams. Course options include Cisco CCNA, ITIL, MTA, IP addressing and subnetting, and more.","type":"seo"}],"icon_name":"it-certification","id":132,"title_cleaned":"it-certification","children":null,"type":"subcategory"},{"title":"Network \u0026 Security","absolute_url":"/courses/it-and-software/network-and-security/","descriptions":[{"text":"Enroll in online classes to learn all about networks and security. Options include Ethical Hacking, WordPress Security, Hadoop, and more.","type":"seo"}],"icon_name":"network-and-security","id":134,"title_cleaned":"network-and-security","children":null,"type":"subcategory"},{"title":"Hardware","absolute_url":"/courses/it-and-software/hardware/","descriptions":[{"text":"Enroll in IT hardware courses to learn everything about Arduino, semiconductors, electronic circuits, PLC programming, ANSYS, and more.","type":"seo"}],"icon_name":"hardware","id":136,"title_cleaned":"hardware","children":null,"type":"subcategory"},{"title":"Operating Systems","absolute_url":"/courses/it-and-software/operating-systems/","descriptions":[{"text":"Take classes on operating systems online to learn everything from Linux and Mac OS, to Microsoft and more. Choose from beginner to advanced courses.","type":"seo"}],"icon_name":"operating-systems","id":138,"title_cleaned":"operating-systems","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in IT and software courses online to learn about everything from Oracle and Bootstrap, to cloud computing, troubleshooting, and more.","type":"seo"}],"absolute_url":"/courses/it-and-software/other-it-and-software/","title":"Other","icon_name":"line-star","id":140,"title_cleaned":"other-it-and-software","children":null,"type":"subcategory"}],"type":"category"},{"title":"Office Productivity","absolute_url":"/courses/office-productivity/","descriptions":[{"text":"Improve your results and get ahead with these office productivity courses on: Microsoft Excel, Apple, Google, SAP, Intuit, Oracle, Salesforce and others.","type":"seo"},{"text":"Improve your results and get ahead with these office productivity courses on: Microsoft Excel, Apple, Google, SAP, Intuit, Oracle, Salesforce and others.","type":"web"}],"icon_name":"office-productivity","id":292,"title_cleaned":"office-productivity","children":[{"descriptions":[{"text":"Take courses to become proficient in Microsoft Windows, Excel, Word, PowerPoint, and more. Choose from beginner to advanced level classes.","type":"seo"},{"text":"Become proficient in Microsoft tools: Windows, Sharepoint, Excel, Word, Powerpoint, Outlook, OneNote, Publisher, Project and more.","type":"web"}],"absolute_url":"/courses/office-productivity/microsoft/","title":"Microsoft","icon_name":"microsoft","id":96,"title_cleaned":"microsoft","children":null,"type":"subcategory"},{"descriptions":[{"text":"Master all things Apple with classes on OS, iOS, Apple devices, Keynote, iMovie, and more. Choose from beginner to advanced level online courses.","type":"seo"},{"text":"Master all things Macintosh: MacBooks, iPad, iPhone, iPod, AppleTV, Keynote, Numbers, Pages and more.","type":"web"}],"absolute_url":"/courses/office-productivity/apple/","title":"Apple","icon_name":"apple","id":98,"title_cleaned":"apple","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses to learn how to use all of the digital products and services that Google has to offer, such as Gmail, Chrome, Drive, and Hangouts.","type":"seo"}],"absolute_url":"/courses/office-productivity/google/","title":"Google","icon_name":"google","id":100,"title_cleaned":"google","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn all there is to know about SAP Software and Solutions through online courses, such as SAP WM, SAP FICO, SAP BASIS, and more.","type":"seo"}],"absolute_url":"/courses/office-productivity/sap/","title":"SAP","icon_name":"sap","id":102,"title_cleaned":"sap","children":null,"type":"subcategory"},{"descriptions":[{"text":"Master all things Oracle with online courses in everything from Oracle SQL to the eBusiness Suite and more. Beginner to advanced courses available.","type":"seo"}],"absolute_url":"/courses/office-productivity/oracle/","title":"Oracle","icon_name":"oracle","id":106,"title_cleaned":"oracle","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses to become more efficient and effective at work. Learn tools and programs that include Evernote, Dropbox, GitHub, and more.","type":"seo"}],"absolute_url":"/courses/office-productivity/other-productivity/","title":"Other","icon_name":"line-star","id":108,"title_cleaned":"other-productivity","children":null,"type":"subcategory"}],"type":"category"},{"title":"Personal Development","absolute_url":"/courses/personal-development/","descriptions":[{"text":"With online personal development courses from Udemy, you will learn how to be more confident, happier, productive and sucessful. Sign up today and start learning.","type":"seo"},{"text":"With online personal development courses from Udemy, you will learn how to be more confident, happier, productive and sucessful. Sign up today and start learning.","type":"web"}],"icon_name":"personal-development","id":296,"title_cleaned":"personal-development","children":[{"descriptions":[{"text":"Challenge yourself to become the best that you can be with our courses on personal transformation, from mastering habits, to building relationships, and more.","type":"seo"},{"text":"Challenge yourself to become the best that you can be with our courses on personal transformation.","type":"web"}],"absolute_url":"/courses/personal-development/personal-transformation/","title":"Personal Transformation","icon_name":"personal-transformation","id":142,"title_cleaned":"personal-transformation","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take courses online from the comfort of home and learn how to manage your time effectively so you can become more productive and enjoy more free time.","type":"seo"}],"absolute_url":"/courses/personal-development/productivity/","title":"Productivity","icon_name":"productivity","id":144,"title_cleaned":"productivity","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses to learn how to effectively lead and influence others with charisma, power, vision, intelligence, theories, and more.","type":"seo"},{"text":"Learn how to lead and influence others with charisma, power, vision, intelligence, theories and more.","type":"web"}],"absolute_url":"/courses/personal-development/leadership/","title":"Leadership","icon_name":"leadership","id":146,"title_cleaned":"leadership","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn how to manage your budget and plan for long-term and short-term expenses, as well as insurance, savings and investments, mortgages, and more.","type":"seo"},{"text":"Learn how to manage your budget and plan for long and short term expenses including insurance, savings, investing, mortgages and many more.","type":"web"}],"absolute_url":"/courses/personal-development/personal-finance/","title":"Personal Finance","icon_name":"personal-finance","id":148,"title_cleaned":"personal-finance","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online career development courses that will help you take control of your path, land your dream job, and make more money doing what you enjoy.","type":"seo"}],"absolute_url":"/courses/personal-development/career-development/","title":"Career Development","icon_name":"career-development","id":150,"title_cleaned":"career-development","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in parenting and relationships courses that will help you be the best parent, lover, and spouse. Improve existing relationships and form new ones.","type":"seo"}],"absolute_url":"/courses/personal-development/parenting-and-relationships/","title":"Parenting \u0026 Relationships","icon_name":"parenting-and-relationships","id":152,"title_cleaned":"parenting-and-relationships","children":null,"type":"subcategory"},{"descriptions":[{"text":"Achieve happiness and a positive attitude by learning about positive psychology, finding your passion, reaching your potential, and the science of happiness.","type":"seo"},{"text":"Learn about positive psychology, finding your passion, reaching your potential and more on the science of happiness.","type":"web"}],"absolute_url":"/courses/personal-development/happiness/","title":"Happiness","icon_name":"happiness","id":156,"title_cleaned":"happiness","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses to expand your mind by learning about world religions, astrology, forms of spirituality, and more.","type":"seo"},{"text":"Learn about new religions, understand your spirituality, discover new thoughts or occult and much more.","type":"web"}],"absolute_url":"/courses/personal-development/religion-and-spirituality/","title":"Religion \u0026 Spirituality","icon_name":"religion-and-spirituality","id":158,"title_cleaned":"religion-and-spirituality","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn best practices and advice on how to create a compelling personal brand. Master tools and techniques for boosting confidence and achieving your goals.","type":"seo"},{"text":"Learn best practices and advice on how to create a compelling personal brand.","type":"web"}],"absolute_url":"/courses/personal-development/personal-brand-building/","title":"Personal Brand Building","icon_name":"personal-brand-building","id":160,"title_cleaned":"personal-brand-building","children":null,"type":"subcategory"},{"descriptions":[{"text":"From idea generation and creative confidence, to the power of the subconscious, innovation, and invention, enroll in courses that will boost your creativity.","type":"seo"},{"text":"From idea generation to creative confidence, the power of the subconcious to innovation and invention, come discover methods of creativity.","type":"web"}],"absolute_url":"/courses/personal-development/creativity/","title":"Creativity","icon_name":"creativity","id":164,"title_cleaned":"creativity","children":null,"type":"subcategory"},{"descriptions":[{"text":"From negotiation tactics and communication strategies, to winning friends and persuading colleagues, enroll in courses to make an impact and influence others.","type":"seo"},{"text":"From negotiation tactics to communication strategies, winning friends to persuading colleagues, learn how to most effectively make an impact with these courses on influence.","type":"web"}],"absolute_url":"/courses/personal-development/influence/","title":"Influence","icon_name":"influence","id":166,"title_cleaned":"influence","children":null,"type":"subcategory"},{"descriptions":[{"text":"Develop the confidence and identity you need to be successful. Learn how to achieve higher self-esteem, more self-respect, and a more powerful self-image.","type":"seo"},{"text":"Develop the confidence and identity you need to be successful with high self esteem, self respect and positive self images.","type":"web"}],"absolute_url":"/courses/personal-development/self-esteem/","title":"Self Esteem","icon_name":"self-esteem","id":168,"title_cleaned":"self-esteem","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses from the comfort of your home to learn how to manage and reduce stress, negativity, and anxiety so you can be happier and more productive.","type":"seo"}],"absolute_url":"/courses/personal-development/stress-management/","title":"Stress Management","icon_name":"stress-management","id":170,"title_cleaned":"stress-management","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses that will teach you valuable study skills and memory improvement techniques so you can be a more effective student and worker.","type":"seo"}],"absolute_url":"/courses/personal-development/memory/","title":"Memory \u0026 Study Skills","icon_name":"memory","id":172,"title_cleaned":"memory","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses to learn how to get and stay motivated so you can set and pursue your goals and enjoy more success.","type":"seo"}],"absolute_url":"/courses/personal-development/motivation/","title":"Motivation","icon_name":"motivation","id":176,"title_cleaned":"motivation","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in personal development courses online in order to transform yourself, reduce stress, become more joyful, pursue your dreams, lead others, and more.","type":"seo"},{"text":"Develop skills in reading body language, detecting lies, analyzing handwriting and more.","type":"web"}],"absolute_url":"/courses/personal-development/other-personal-development/","title":"Other","icon_name":"line-star","id":178,"title_cleaned":"other-personal-development","children":null,"type":"subcategory"}],"type":"category"},{"title":"Design","absolute_url":"/courses/design/","descriptions":[{"text":"The ultimate online design courses - learn how to design web sites, logos, posters and more. Find a course on Udemy and start learning today.","type":"seo"},{"text":"Learn how to design websites, logos, book covers, and so much more.","type":"web"}],"icon_name":"design","id":269,"title_cleaned":"design","children":[{"descriptions":[{"text":"Learn everything from responsive web design, to WordPress design, and create user-friendly sites for yourself or for your web design business clients.","type":"seo"}],"absolute_url":"/courses/design/web-design/","title":"Web Design","icon_name":"web-design","id":6,"title_cleaned":"web-design","children":null,"type":"subcategory"},{"descriptions":[{"text":"Master all aspects of graphic design by enrolling in courses that will train you in typography, drawing, photo editing, logo creation, and more.","type":"seo"}],"absolute_url":"/courses/design/graphic-design/","title":"Graphic Design","icon_name":"graphic-design","id":110,"title_cleaned":"graphic-design","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn design tools, from Adobe to Camtasia, used by experts in a variety of creative fields. Make and edit videos, photos, animations, and more.","type":"seo"}],"absolute_url":"/courses/design/design-tools/","title":"Design Tools","icon_name":"design-tools","id":112,"title_cleaned":"design-tools","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn what it takes to design user interfaces and create great user experiences for a variety of digital products, from websites and apps, to games and more.","type":"seo"}],"absolute_url":"/courses/design/user-experience/","title":"User Experience","icon_name":"user-experience","id":114,"title_cleaned":"user-experience","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take courses to learn how to build a video game from start to finish. Master game theory and styles, as well as the creation of worlds, levels, and characters.","type":"seo"}],"absolute_url":"/courses/design/game-design/","title":"Game Design","icon_name":"game-design","id":116,"title_cleaned":"game-design","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn design thinking techniques and tools you can apply to the process of designing. Courses include storyboarding, designing for engagement, and more.","type":"seo"}],"absolute_url":"/courses/design/design-thinking/","title":"Design Thinking","icon_name":"design-thinking","id":118,"title_cleaned":"design-thinking","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses to master programs that include Autodesk Maya, Revit, Adobe After Effects, and more to enhance your 3D design and animation skills.","type":"seo"},{"text":"Learn the XYZ of 3D and animation design using Autodesk Maya, Revit, Adobe After Effects, and more. ","type":"web"}],"absolute_url":"/courses/design/3d-and-animation/","title":"3D \u0026 Animation","icon_name":"3d-and-animation","id":120,"title_cleaned":"3d-and-animation","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses in fashion to improve your look or start a career in the fashion industry. Learn how to start a fashion brand, become a stylist, and more.","type":"seo"}],"absolute_url":"/courses/design/fashion/","title":"Fashion","icon_name":"fashion","id":122,"title_cleaned":"fashion","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online architectural design courses to learn tools that will enhance your career. Courses include 3D modeling, Autocad, exhibition design, and Lumion.","type":"seo"}],"absolute_url":"/courses/design/architectural-design/","title":"Architectural Design","icon_name":"architectural-design","id":124,"title_cleaned":"architectural-design","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take interior design courses online to learn how to arrange your furniture, decorate your home, pick the right paint colors, update your kitchen, and more.","type":"seo"},{"text":"Learn how to layout your furniture, decorate, pick the right paint color, update your kitchen, and more. ","type":"web"}],"absolute_url":"/courses/design/interior-design/","title":"Interior Design","icon_name":"interior-design","id":128,"title_cleaned":"interior-design","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses to take your design career to new heights or start a new one. Work in a creative field by becoming a better artist and designer.","type":"seo"}],"absolute_url":"/courses/design/other-design/","title":"Other","icon_name":"line-star","id":130,"title_cleaned":"other-design","children":null,"type":"subcategory"}],"type":"category"},{"title":"Marketing","absolute_url":"/courses/marketing/","descriptions":[{"text":"Learn marketing to grow your business. Build your digital marketing, social media, growth hacking, content and branding skills with these great courses","type":"seo"},{"text":"Learn marketing to grow your business. Build your digital marketing, social media, growth hacking, content and branding skills with these great courses.","type":"web"}],"icon_name":"marketing","id":290,"title_cleaned":"marketing","children":[{"descriptions":[{"text":"Advance your digital marketing skills with great courses that teach you digital marketing strategy and tactics. ","type":"seo"},{"text":"Advance your digital marketing skills with great courses that teach you digital marketing strategy and tactics. ","type":"web"}],"absolute_url":"/courses/marketing/digital-marketing/","title":"Digital Marketing","icon_name":"digital-marketing","id":62,"title_cleaned":"digital-marketing","children":null,"type":"subcategory"},{"descriptions":[{"text":"Boost your google page rankings with these great SEO courses: on-page seo, off-page seo, link building, keyword research and more.","type":"seo"},{"text":"Boost your google page rankings with these great SEO courses: on-page seo, off-page seo, link building, keyword research and more.","type":"web"}],"absolute_url":"/courses/marketing/search-engine-optimization/","title":"Search Engine Optimization","icon_name":"search-engine-optimization","id":64,"title_cleaned":"search-engine-optimization","children":null,"type":"subcategory"},{"descriptions":[{"text":"Become a social media maven with online courses that can increase your social media presence. Create a strategy and use networking sites to the fullest.","type":"seo"},{"text":"Become a Social Media Maven with courses that can increase your social media presence: create a social media strategy, underderstand Facebook, Twitter and more.","type":"web"}],"absolute_url":"/courses/marketing/social-media-marketing/","title":"Social Media Marketing","icon_name":"social-media-marketing","id":66,"title_cleaned":"social-media-marketing","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses to master branding strategies to increase profits. Learn how to brand yourself or your business, and how to be a brand manager.","type":"seo"}],"absolute_url":"/courses/marketing/branding/","title":"Branding","icon_name":"branding","id":68,"title_cleaned":"branding","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take courses that introduce you to marketing fundamentals, market research, branding, promotion, optimization, and much more.","type":"seo"},{"text":"Need to learn marketing? Start with courese that introduce you to market research, marketing fundementals and more.","type":"web"}],"absolute_url":"/courses/marketing/marketing-fundamentals/","title":"Marketing Fundamentals","icon_name":"marketing-fundamentals","id":70,"title_cleaned":"marketing-fundamentals","children":null,"type":"subcategory"},{"descriptions":[{"text":"Acquire or refine business marketing skills with online courses in analytics and automation. Learn Google Analytics, SQL, market research, and more.","type":"seo"}],"absolute_url":"/courses/marketing/analytics-and-automation/","title":"Analytics \u0026 Automation","icon_name":"analytics-and-automation","id":72,"title_cleaned":"analytics-and-automation","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn how public relations can help grow any business by taking courses on PR and media management for startups and established companies.","type":"seo"},{"text":"Learn how Public Relations can help growth your business with these coures on PR, media management for start-ups to established companies.","type":"web"}],"absolute_url":"/courses/marketing/public-relations/","title":"Public Relations","icon_name":"public-relations","id":74,"title_cleaned":"public-relations","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enhance your marketing and promotional skills by enrolling in online courses and learning how advertising can help grow any business.","type":"seo"}],"absolute_url":"/courses/marketing/advertising/","title":"Advertising","icon_name":"advertising","id":76,"title_cleaned":"advertising","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses and learn how to use videos and mobile marketing techniques to promote any business and increase its profits.","type":"seo"}],"absolute_url":"/courses/marketing/video-and-mobile-marketing/","title":"Video \u0026 Mobile Marketing","icon_name":"video-and-mobile-marketing","id":78,"title_cleaned":"video-and-mobile-marketing","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take courses to learn how to write copy that promotes a business and increases brand awareness and profits, whether you're a business professional or writer.","type":"seo"}],"absolute_url":"/courses/marketing/content-marketing/","title":"Content Marketing","icon_name":"content-marketing","id":80,"title_cleaned":"content-marketing","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn growth hacking strategies and marketing techniques to promote businesses. Take courses in marketing strategy, driving traffic to a website, and more.","type":"seo"}],"absolute_url":"/courses/marketing/growth-hacking/","title":"Growth Hacking","icon_name":"growth-hacking","id":86,"title_cleaned":"growth-hacking","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn how to put affiliate marketing to work for you so you can earn passive income easily or use this marketing technique to promote your business or products.","type":"seo"}],"absolute_url":"/courses/marketing/affiliate-marketing/","title":"Affiliate Marketing","icon_name":"affiliate-marketing","id":88,"title_cleaned":"affiliate-marketing","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take courses online to learn about product marketing so you can increase brand awareness and sales before and after a product launch.","type":"seo"}],"absolute_url":"/courses/marketing/product-marketing/","title":"Product Marketing","icon_name":"product-marketing","id":90,"title_cleaned":"product-marketing","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in a variety of marketing courses online to learn effective ways to promote your business and brand. Grow traffic, plan events, generate leads, and more.","type":"seo"}],"absolute_url":"/courses/marketing/other-marketing/","title":"Other","icon_name":"line-star","id":94,"title_cleaned":"other-marketing","children":null,"type":"subcategory"}],"type":"category"},{"descriptions":[{"text":"Learn how to cook, train your puppy, get a dream job, and much more.","type":"seo"},{"text":"Learn how to cook, train your puppy, get a dream job, and much more.","type":"web"}],"absolute_url":"/courses/lifestyle/","title":"Lifestyle","icon_name":"lifestyle","id":274,"title_cleaned":"lifestyle","children":[{"descriptions":[{"text":"From quilting and cake decorating, to drawing and painting, you can take online courses in arts and crafts for creative individuals of all ages.","type":"seo"},{"text":"From quilting to cake decorating, crafting inspiration to art instruction, welcome to the ultimate place for courses in arts \u0026 crafts.","type":"web"}],"absolute_url":"/courses/lifestyle/arts-and-crafts/","title":"Arts \u0026 Crafts","icon_name":"arts-and-crafts","id":180,"title_cleaned":"arts-and-crafts","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online classes in cooking, baking, wine pairing, beer brewing, and more to indulge in a variety of cuisines and learn how to nourish your body with food.","type":"seo"},{"text":"Learn how to decorate a cake, prepare a gourmet meal, identify different wine varietals and much more.","type":"web"}],"absolute_url":"/courses/lifestyle/food-and-beverage/","title":"Food \u0026 Beverage","icon_name":"food-and-beverage","id":182,"title_cleaned":"food-and-beverage","children":null,"type":"subcategory"},{"descriptions":[{"text":"From hair care and makeup tricks, to skin care and ageless secrets, enroll in a variety of beauty and makeup courses to be a better stylist or pamper yourself.","type":"seo"},{"text":"From hair styles to makeup tips, fashion tips to ageless secrets, welcome to the ultimate place for beauty \u0026 makeup courses.","type":"web"}],"absolute_url":"/courses/lifestyle/beauty-and-makeup/","title":"Beauty \u0026 Makeup","icon_name":"beauty-and-makeup","id":184,"title_cleaned":"beauty-and-makeup","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online classes to access a variety of travel tips for planning a trip, budgeting for a vacation, keeping a record or journal of an adventure, and more.","type":"seo"},{"text":"Discover new tricks when planning a trip, budgeting for a vacation, keeping a record or journel from an adventure, and much more.","type":"web"}],"absolute_url":"/courses/lifestyle/travel/","title":"Travel","icon_name":"travel","id":186,"title_cleaned":"travel","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take gaming courses online so you can learn tips, tricks, and strategies that will help you win games ranging from blackjack and chess to roulette and poker.","type":"seo"}],"absolute_url":"/courses/lifestyle/gaming/","title":"Gaming","icon_name":"gaming","id":188,"title_cleaned":"gaming","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses to discover new DIY projects and gain advice and tips for improving your home, from Feng Shui and gardening, to pool care and saving energy.","type":"seo"},{"text":"Discover new how-to projects and learn advice from other do-it-yourselfers to fix up your home.","type":"web"}],"absolute_url":"/courses/lifestyle/home-improvement/","title":"Home Improvement","icon_name":"home-improvement","id":190,"title_cleaned":"home-improvement","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses to better understand your pets, take proper care of them, and train them. Learn how to keep all of your pets happy, healthy, and safe.","type":"seo"},{"text":"Learn the best kept secrets in pet care and pet training: dogs, cats, rabbits, horses, fish and many more.","type":"web"}],"absolute_url":"/courses/lifestyle/pet-care-and-training/","title":"Pet Care \u0026 Training","icon_name":"pet-care-and-training","id":192,"title_cleaned":"pet-care-and-training","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online lifestyle courses designed to help you make the best decisions when it comes to being a homeowner, student, and professional.","type":"seo"}],"absolute_url":"/courses/lifestyle/other-lifestyle/","title":"Other","icon_name":"line-star","id":194,"title_cleaned":"other-lifestyle","children":null,"type":"subcategory"}],"type":"category"},{"descriptions":[{"text":"Take your photography skills to the next level. Signup for our free or low cost online photography courses and start taking awesome pictures today.","type":"seo"},{"text":"Learn photography, video editing, and much more.","type":"web"}],"absolute_url":"/courses/photography/","title":"Photography","icon_name":"photography","id":273,"title_cleaned":"photography","children":[{"descriptions":[{"text":"Learn the art of digital photography to take and edit photos using a DSLR camera, HDR techniques, green screens, Adobe software, and more.","type":"seo"}],"absolute_url":"/courses/photography/digital-photography/","title":"Digital Photography","icon_name":"digital-photography","id":370,"title_cleaned":"digital-photography","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online classes to master the fundamentals of photography, from lighting and shutter speed, to portrait shots, action shots, and more.","type":"seo"},{"text":"Master the fundamentals of photography, from lighting to shutter speed, from portrait shots to action shots and beyond.","type":"web"}],"absolute_url":"/courses/photography/photography-fundamentals/","title":"Photography Fundamentals","icon_name":"photography-fundamentals","id":196,"title_cleaned":"photography-fundamentals","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online portrait photography courses to learn what it takes to capture beautiful portraits of families, kids, and models in a variety of settings.","type":"seo"},{"text":"Master the fundamentals of portrait photography.","type":"web"}],"absolute_url":"/courses/photography/portraits/","title":"Portraits","icon_name":"portraits","id":204,"title_cleaned":"portraits","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn how to use equipment, accessories, and tools to enhance your photography skills. Master the use of flash, software, lenses, and more.","type":"seo"},{"text":"Learn how to use tools to enhance your photography experience: flashes, editing software, lenses and more.","type":"web"}],"absolute_url":"/courses/photography/photography-tools/","title":"Photography Tools","icon_name":"photography-tools","id":198,"title_cleaned":"photography-tools","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn the art of commercial photography so you can sell your photos and build a business as a photographer.","type":"seo"},{"text":"Master the fundamentals of commerical photography.","type":"web"}],"absolute_url":"/courses/photography/commercial-photography/","title":"Commercial Photography","icon_name":"commercial-photography","id":208,"title_cleaned":"commercial-photography","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn the tools and techniques behind capturing and editing the highest quality videos. Create professional level videos for events and clients.","type":"seo"}],"absolute_url":"/courses/photography/video-design/","title":"Video Design","icon_name":"video-design","id":218,"title_cleaned":"video-design","children":null,"type":"subcategory"},{"descriptions":[{"text":"Be a better photographer by taking online classes that will teach you everything from street and aerial photography, to maintaining gear and editing images.","type":"seo"}],"absolute_url":"/courses/photography/other-photography/","title":"Other","icon_name":"line-star","id":220,"title_cleaned":"other-photography","children":null,"type":"subcategory"}],"type":"category"},{"title":"Health \u0026 Fitness","absolute_url":"/courses/health-and-fitness/","descriptions":[{"text":"Get healthier and fit with Udemy's online fitness courses. Learn yoga, pilates, meditation, tai chi and more. Find a course on Udemy and start transforming your body.","type":"seo"},{"text":"Be healthier and happier through yoga, meditation, fitness, nutrition, and more.","type":"web"}],"icon_name":"health-and-fitness","id":276,"title_cleaned":"health-and-fitness","children":[{"descriptions":[{"text":"Participate in fitness classes online whenever and wherever you want. Courses focus on shedding pounds and fat, stretching, and building strength.","type":"seo"}],"absolute_url":"/courses/health-and-fitness/fitness/","title":"Fitness","icon_name":"fitness","id":222,"title_cleaned":"fitness","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online classes in general health to improve every aspect of your body and mind, from your vision and posture, to your concentration and sleep patterns.","type":"seo"}],"absolute_url":"/courses/health-and-fitness/general-health/","title":"General Health","icon_name":"general-health","id":224,"title_cleaned":"general-health","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online courses to learn how to play a variety of sports or become a better athlete through physical activities. Master sports betting.","type":"seo"}],"absolute_url":"/courses/health-and-fitness/sports/","title":"Sports","icon_name":"sports","id":226,"title_cleaned":"sports","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take courses online to study nutrition and learn about vitamins, minerals, healthy diet options, and how to lose weight and feel great naturally.","type":"seo"},{"text":"From vitamins to healthy diets, from loosing weight to feeling good, welcome to the ultimate place for nutrition courses.","type":"web"}],"absolute_url":"/courses/health-and-fitness/nutrition/","title":"Nutrition","icon_name":"nutrition","id":228,"title_cleaned":"nutrition","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take yoga classes anytime and anywhere so you can rejuvenate your body and mind. Reap the benefits as a student or expand your abilities with teacher training.","type":"seo"},{"text":"Learn the fundamentals of yoga, perfect your poses, practice daily, or learn to teach with our variety of yoga courses.","type":"web"}],"absolute_url":"/courses/health-and-fitness/yoga/","title":"Yoga","icon_name":"yoga","id":230,"title_cleaned":"yoga","children":null,"type":"subcategory"},{"descriptions":[{"text":"Enroll in online mental health courses to learn about the mind and the illnesses that afflict it. Learn how to improve your mental health and help others.","type":"seo"},{"text":"Enhance your mental health or learn how to help yourself or loved ones battle against mental illnesses.","type":"web"}],"absolute_url":"/courses/health-and-fitness/mental-health/","title":"Mental Health","icon_name":"mental-health","id":232,"title_cleaned":"mental-health","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online dieting courses to learn how to effectively lose weight, get in shape, and be healthier so you can look and feel better than ever.","type":"seo"},{"text":"Learn how to eat healthy, lose weight and feel great with our dieting courses.","type":"web"}],"absolute_url":"/courses/health-and-fitness/dieting/","title":"Dieting","icon_name":"dieting","id":234,"title_cleaned":"dieting","children":null,"type":"subcategory"},{"descriptions":[{"text":"Know how to protect yourself by taking online self-defense courses. Choose from various martial arts styles and combat training, or learn to run your own dojo.","type":"seo"},{"text":"Learn how to be best prepared in any situation with our self defense courses.","type":"web"}],"absolute_url":"/courses/health-and-fitness/self-defense/","title":"Self Defense","icon_name":"self-defense","id":236,"title_cleaned":"self-defense","children":null,"type":"subcategory"},{"descriptions":[{"text":"Be prepared in any emergency by taking online courses in safety and first aid. Master CPR, acupressure, disaster planning, and more.","type":"seo"},{"text":"Learn how to be best prepared in any situation with our safety and first aid courses.","type":"web"}],"absolute_url":"/courses/health-and-fitness/safety-and-first-aid/","title":"Safety \u0026 First Aid","icon_name":"safety-and-first-aid","id":238,"title_cleaned":"safety-and-first-aid","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn the fundamentals of dance or perfect your techniques in a plethora of dance styles so you can confidently dance alone or with a partner.","type":"seo"},{"text":"Learn the fundamentals of dance or perfect your techniques with the plethora of dance courses.","type":"web"}],"absolute_url":"/courses/health-and-fitness/dance/","title":"Dance","icon_name":"dance","id":240,"title_cleaned":"dance","children":null,"type":"subcategory"},{"descriptions":[{"text":"Learn the fundamentals of meditation, as well as the different types of meditation. Improve breathing techniques and relax the mind and body.","type":"seo"},{"text":"Learn the fundamentals of meditation, perfect your breathing techniques, practice daily, or learn to teach with our variety of meditation courses.","type":"web"}],"absolute_url":"/courses/health-and-fitness/meditation/","title":"Meditation","icon_name":"meditation","id":242,"title_cleaned":"meditation","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take online courses in health and fitness so you can feel better naturally. Learn about aromatherapy, massage, reflexology, sobriety, herbal remedies, and more.","type":"seo"}],"absolute_url":"/courses/health-and-fitness/other-health-and-fitness/","title":"Other","icon_name":"line-star","id":244,"title_cleaned":"other-health-and-fitness","children":null,"type":"subcategory"}],"type":"category"},{"title":"Music","absolute_url":"/courses/music/","descriptions":[{"text":"Learn music online. Best online guitar, piano, ukulele, autoharp and DJ courses online. Discover a course on Udemy and start learning.","type":"seo"},{"text":"Learn guitar, piano, music theory, improvisation, DJing, music production, and much more.","type":"web"}],"icon_name":"music","id":278,"title_cleaned":"music","children":[{"title":"Instruments","absolute_url":"/courses/music/instruments/","descriptions":[{"text":"Take online music classes to learn how to play a variety of musical instruments, from the piano and guitar, to the harmonica, djembe, and more.","type":"seo"}],"icon_name":"instruments","id":296,"title_cleaned":"instruments","children":null,"type":"subcategory"},{"title":"Production","absolute_url":"/courses/music/production/","descriptions":[{"text":"Learn the ins and outs of music production with online courses that will teach you how to record and mix songs like a pro.","type":"seo"}],"icon_name":"production","id":298,"title_cleaned":"production","children":null,"type":"subcategory"},{"title":"Music Fundamentals","absolute_url":"/courses/music/music-fundamentals/","descriptions":[{"text":"Master the fundamentals of music and songwriting, including music theory, how to read music, how to play by ear, and more.","type":"seo"}],"icon_name":"music-fundamentals","id":300,"title_cleaned":"music-fundamentals","children":null,"type":"subcategory"},{"title":"Vocal","absolute_url":"/courses/music/vocal/","descriptions":[{"text":"Learn various vocal exercises and singing techniques to understand music and become a better singer, regardless of what musical styles you prefer.","type":"seo"}],"icon_name":"vocal","id":302,"title_cleaned":"vocal","children":null,"type":"subcategory"},{"title":"Music Techniques","absolute_url":"/courses/music/music-techniques/","descriptions":[],"icon_name":"music-techniques","id":304,"title_cleaned":"music-techniques","children":null,"type":"subcategory"},{"title":"Music Software","absolute_url":"/courses/music/music-software/","descriptions":[{"text":"Learn the best music software and tools that musical professionals use for music composition, notation, recording, production, and more.","type":"seo"},{"text":"Learn the tools musical professionals use for music composition, notation, and more. ","type":"web"}],"icon_name":"music-software","id":306,"title_cleaned":"music-software","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take music lessons at home with online courses that will help you write, record, and perform songs. Learn how to promote and sell your music and go on tour.","type":"seo"}],"absolute_url":"/courses/music/other-music/","title":"Other","icon_name":"line-star","id":308,"title_cleaned":"other-music","children":null,"type":"subcategory"}],"type":"category"},{"descriptions":[{"text":"Take online courses in math, science, geography and history from experts.","type":"seo"},{"text":"Learn geography, history, math and science from world experts.","type":"web"}],"absolute_url":"/courses/teaching-and-academics/","title":"Teaching \u0026 Academics","icon_name":"academics","id":300,"title_cleaned":"teaching-and-academics","children":[{"descriptions":[],"absolute_url":"/courses/teaching-and-academics/engineering/","title":"Engineering","icon_name":"development-tools","id":366,"title_cleaned":"engineering","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take humanities courses online to learn subjects that include art history, literature, writing, philosophy, and religion, all taught by experts.","type":"seo"},{"text":"Take literature, writing, philosophy, religion, and art history courses from the world\u2019s experts.","type":"web"}],"absolute_url":"/courses/teaching-and-academics/humanities/","title":"Humanities","icon_name":"humanities","id":380,"title_cleaned":"humanities","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/teaching-and-academics/math/","title":"Math","icon_name":"educational-development","id":310,"title_cleaned":"math","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/teaching-and-academics/science/","title":"Science","icon_name":"math-and-science","id":312,"title_cleaned":"science","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/teaching-and-academics/online-education/","title":"Online Education","icon_name":"instructional-design","id":523,"title_cleaned":"online-education","children":null,"type":"subcategory"},{"descriptions":[{"text":"Take social science courses online and study everything from psychology and economics, to history and more. Classes are taught by experts from around the world.","type":"seo"},{"text":"Take psychology, economics, and history courses from the world\u2019s experts.","type":"web"}],"absolute_url":"/courses/teaching-and-academics/social-science/","title":"Social Science","icon_name":"social-science","id":376,"title_cleaned":"social-science","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/teaching-and-academics/language/","title":"Language","icon_name":"language","id":521,"title_cleaned":"language","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/teaching-and-academics/teacher-training/","title":"Teacher Training","icon_name":"teacher-training","id":527,"title_cleaned":"teacher-training","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/teaching-and-academics/test-prep/","title":"Test Prep","icon_name":"test-prep","id":529,"title_cleaned":"test-prep","children":null,"type":"subcategory"},{"descriptions":[],"absolute_url":"/courses/teaching-and-academics/other-teaching-academics/","title":"Other Teaching \u0026 Academics","icon_name":"academics","id":525,"title_cleaned":"other-teaching-academics","children":null,"type":"subcategory"}],"type":"category"}],
+                popular_subcategory_topics: {"24":[{"title":"Financial Analysis","absolute_url":"/topic/financial-analysis/","id":5800},{"title":"Investing","absolute_url":"/topic/investing/","id":6282},{"title":"Stock Trading","absolute_url":"/topic/stock-trading/","id":7900},{"title":"Financial Modeling","absolute_url":"/topic/financial-modeling/","id":5806},{"title":"Forex","absolute_url":"/topic/forex/","id":5868},{"title":"Finance Fundamentals","absolute_url":"/topic/finance/","id":5798},{"title":"Excel","absolute_url":"/topic/excel/","id":6730},{"title":"Accounting","absolute_url":"/topic/accounting/","id":4328},{"title":"Python","absolute_url":"/topic/python/","id":7380}],"132":[{"title":"AWS Certification","absolute_url":"/topic/aws-certification/","id":4704},{"title":"AWS Certified Solutions Architect - Associate","absolute_url":"/topic/aws-certified-solutions-architect-associate/","id":24774},{"title":"Cisco CCNA","absolute_url":"/topic/cisco-ccna/","id":5044},{"title":"Microsoft Azure","absolute_url":"/topic/microsoft-azure/","id":6716},{"title":"Amazon AWS","absolute_url":"/topic/amazon-aws/","id":4452},{"title":"CompTIA A+","absolute_url":"/topic/comptia-a/","id":5166},{"title":"AWS Certified Developer - Associate","absolute_url":"/topic/aws-certified-developer-associate/","id":43860},{"title":"Microsoft Certification","absolute_url":"/topic/microsoft-certification/","id":6720},{"title":"CompTIA Security+","absolute_url":"/topic/comptia-security/","id":5176}],"110":[{"title":"Photoshop","absolute_url":"/topic/photoshop/","id":4402},{"title":"Adobe Illustrator","absolute_url":"/topic/adobe-illustrator/","id":4394},{"title":"Drawing","absolute_url":"/topic/drawing/","id":5494},{"title":"Graphic Design","absolute_url":"/topic/graphic-design/","id":6020},{"title":"InDesign","absolute_url":"/topic/indesign/","id":4396},{"title":"Figure Drawing","absolute_url":"/topic/figure-drawing/","id":10470},{"title":"Logo Design","absolute_url":"/topic/logo-design/","id":6570},{"title":"Illustration","absolute_url":"/topic/illustration/","id":6208},{"title":"Digital Art","absolute_url":"/topic/digital-art/","id":5418}],"142":[{"title":"Life Coaching","absolute_url":"/topic/life-coaching/","id":10684},{"title":"Neuro-Linguistic Programming","absolute_url":"/topic/neuro-linguistic-programming/","id":6910},{"title":"Reiki","absolute_url":"/topic/reiki/","id":7484},{"title":"Energy Healing","absolute_url":"/topic/energy-healing/","id":5618},{"title":"Mindfulness","absolute_url":"/topic/mindfulness/","id":6770},{"title":"Meditation","absolute_url":"/topic/meditation/","id":6680},{"title":"Crystal Energy","absolute_url":"/topic/crystal-energy/","id":19020},{"title":"Neuroscience","absolute_url":"/topic/neuroscience/","id":6916},{"title":"Emotional Intelligence","absolute_url":"/topic/emotional-intelligence/","id":5604}],"8":[{"title":"Web Development","absolute_url":"/topic/web-development/","id":8322},{"title":"JavaScript","absolute_url":"/topic/javascript/","id":6368},{"title":"React","absolute_url":"/topic/react/","id":7450},{"title":"Angular","absolute_url":"/topic/angular/","id":28016},{"title":"CSS","absolute_url":"/topic/css/","id":5306},{"title":"PHP","absolute_url":"/topic/php/","id":7176},{"title":"Node.Js","absolute_url":"/topic/nodejs/","id":6928},{"title":"Vue JS","absolute_url":"/topic/vue-js/","id":4308},{"title":"Python","absolute_url":"/topic/python/","id":7380}],"10":[{"title":"Android Development","absolute_url":"/topic/android-development/","id":4470},{"title":"iOS Development","absolute_url":"/topic/ios-development/","id":6292},{"title":"Google Flutter","absolute_url":"/topic/google-flutter/","id":52458},{"title":"Swift","absolute_url":"/topic/swift/","id":7956},{"title":"React Native","absolute_url":"/topic/react-native/","id":9884},{"title":"Dart Programming Language","absolute_url":"/topic/dart-programming-language/","id":37860},{"title":"Ionic","absolute_url":"/topic/ionic/","id":6290},{"title":"Kotlin","absolute_url":"/topic/kotlin/","id":13554},{"title":"Mobile Development","absolute_url":"/topic/mobile-development/","id":5402}],"62":[{"title":"Digital Marketing","absolute_url":"/topic/digital-marketing/","id":5430},{"title":"Google Ads (Adwords)","absolute_url":"/topic/google-ads/","id":73900},{"title":"Google Ads (AdWords) Certification","absolute_url":"/topic/google-ads-certification/","id":9838},{"title":"Marketing Strategy","absolute_url":"/topic/marketing-strategy/","id":6630},{"title":"Social Media Marketing","absolute_url":"/topic/social-media-marketing/","id":7788},{"title":"Facebook Marketing","absolute_url":"/topic/facebook-marketing/","id":5744},{"title":"Google Analytics","absolute_url":"/topic/google-analytics/","id":5980},{"title":"Internet Marketing","absolute_url":"/topic/internet-marketing/","id":6994},{"title":"Email Marketing","absolute_url":"/topic/email-marketing/","id":5586}],"44":[{"title":"Data Science","absolute_url":"/topic/data-science/","id":5336},{"title":"Machine Learning","absolute_url":"/topic/machine-learning/","id":6594},{"title":"Python","absolute_url":"/topic/python/","id":7380},{"title":"Data Analysis","absolute_url":"/topic/data-analysis/","id":5328},{"title":"Deep Learning","absolute_url":"/topic/deep-learning/","id":5374},{"title":"SQL","absolute_url":"/topic/sql/","id":7862},{"title":"Artificial Intelligence","absolute_url":"/topic/artificial-intelligence/","id":4624},{"title":"Microsoft Power BI","absolute_url":"/topic/microsoft-power-bi/","id":6740},{"title":"Business Analysis","absolute_url":"/topic/business-analysis/","id":9000}],"26":[{"title":"Business Fundamentals","absolute_url":"/topic/business-fundamentals/","id":4882},{"title":"Dropshipping","absolute_url":"/topic/dropshipping/","id":5502},{"title":"Entrepreneurship Fundamentals","absolute_url":"/topic/entrepreneurship/","id":5654},{"title":"Business Strategy","absolute_url":"/topic/business-strategy/","id":4898},{"title":"Business Plan","absolute_url":"/topic/business-plan/","id":4894},{"title":"Amazon FBA","absolute_url":"/topic/amazon-fba/","id":4454},{"title":"Freelancing","absolute_url":"/topic/freelancing/","id":5874},{"title":"Startup","absolute_url":"/topic/startup/","id":7888},{"title":"Mug Printing","absolute_url":"/topic/mug-printing/","id":32112}],"14":[{"title":"Unity","absolute_url":"/topic/unity/","id":8154},{"title":"Game Development Fundamentals","absolute_url":"/topic/game-development/","id":5904},{"title":"C#","absolute_url":"/topic/c-sharp/","id":4904},{"title":"Unreal Engine","absolute_url":"/topic/unreal-engine/","id":8166},{"title":"3D Game Development","absolute_url":"/topic/3d-game-development/","id":4280},{"title":"C++","absolute_url":"/topic/c-plus-plus/","id":4908},{"title":"2D Game Development","absolute_url":"/topic/2d-game-development/","id":25642},{"title":"Unreal Engine Blueprints","absolute_url":"/topic/unreal-engine-blueprints/","id":109866},{"title":"Mobile Game Development","absolute_url":"/topic/mobile-game-development/","id":11042}]},
+            };
+        </script>
+<script>
+    
+    window.GoogleAnalyticsObject = 'ga';
+    window.ga = function () {
+        (window.ga.q = window.ga.q || []).push(arguments);
+    };
+    window.ga.l = 1 * new Date();
+
+    UD.GoogleAnalytics = UD.GoogleAnalytics || {};
+    UD.GoogleAnalytics.createAccount = function (accountId, propertyName, domainName) {
+        if (accountId) {
+            if (propertyName) {
+                // Required for multiple trackers
+                window.ga('create', accountId, 'auto', {'name': propertyName, 'cookieDomain': domainName || 'none',
+                    'siteSpeedSampleRate': 10});
+            } else {
+                window.ga('create', accountId, 'auto', {'siteSpeedSampleRate': 10});
+                window.ga('require', 'displayfeatures'); // Enables retargeting
+            }
+            window.ga('set', {
+                'anonymizeIp': true,
+                'location' : ""
+            });
+        }
+    };
+    UD.GoogleAnalytics.createAccount(UD.Config.third_party.google_analytics_id);
+</script>
+<script>
+   (function activateMyQualaroos(surveyIds) {
+        window._kiq = window._kiq || [];
+        var i, property;
+        for (i = 0; i < surveyIds.length; i++) {
+            property = {};
+            property[surveyIds[i]] = true;
+            window._kiq.push(['set', property]);
+        }
+        window._kiq.push(['identify', UD.visiting.visitor_uuid || '']);
+    })(UD.me.qualaroo_survey_ids);
+</script>
+<script>
+    window.hj=window.hj||function(){(hj.q=hj.q||[]).push(arguments)};
+</script>
+<base href="/the-complete-nodejs-developer-course-2/learn/">
+<link rel="preload" as="script" href="/staticx/udemy/js/webpack/course-taking-app.8d393c1f041ed2513f31.js">
+</head>
+<body id="udemy" class="  udemy ">
+<div class="main-content-wrapper">
+<div class="main-content">
+<div class="ud-app-loader ud-component--course-taking--app w100p h100p" data-module-id="course-taking" data-module-args="{&quot;hasDismissedReviewPrompt&quot;:true,&quot;isPreviewingAsStudent&quot;:false,&quot;isUserInstructor&quot;:false,&quot;initialCurriculumItemId&quot;:13729046,&quot;canUserEditCourse&quot;:false,&quot;canManageCourseQA&quot;:false,&quot;initialCurriculumItemType&quot;:&quot;lecture&quot;,&quot;courseId&quot;:922484}">
+</div>
+</div>
+<div class="ud-app-loader ud-angular--intercom--app" data-module-id="intercom"></div>
+<div class="footer-v6 footer--marketplace ud-app-loader ud-component--footer--app
+            footer--en-us
+            footer--with-inst-banner" data-module-id="footer" data-module-args="{&quot;localeDropdown&quot;:{&quot;currentLanguage&quot;:&quot;English&quot;},&quot;ufbNotice&quot;:{&quot;link&quot;:&quot;https://business.udemy.com/request-demo/&quot;},&quot;mobileAppDownload&quot;:{&quot;link&quot;:&quot;https://udemy.app.link/garBkjjtDO&quot;}}" data-module-priority="-20" data-purpose="footer-bar">
+<div class="fixed-message-container">
+<div class="ud-component--footer--legal-message"></div>
+<div class="ud-app-loader ud-component--footer--eu-cookie-message" data-module-id="eu-cookie-message" data-module-priority="-20">
+</div>
+</div>
+<footer>
+<div class="footer__inst-banner">
+<div class="container">
+<div class="ud-component--footer--inst-banner"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="inst-banner__content">
+<div class="hidden-xs hidden-xxs">
+<img alt="Video course" class="inst-banner__icon mr20" src="https://i.udemycdn.com/teaching/teach-footer.png" width="200" height="180" />
+</div>
+<div class="inst-banner__copy">
+<div class="inst-banner__heading">
+Teach the world online
+</div>
+<div class="inst-banner__subheading">
+Create an online video course, reach students across the globe, and earn money
+</div>
+</div>
+<div>
+<a class="btn btn-default inst-banner__btn pt10" href="/teaching/?ref=bai-sub-footer" role="button" tabindex="0">
+Teach on Udemy
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr />
+<div class="container-flex footer__bottom footer__bottom--ia">
+<div class="row">
+<div class="col-sm-4 col-xs-6 fx-lc footer__bottom__copyright">
+<a class="dib mr20" href="/">
+<img alt="Udemy" class="ufb-logo" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="110" height="32" />
+</a>
+<div class="visible-xxs-block visible-xs-inline-block mb10"></div>
+<span class="footer__copyright dib mr20 text-midnight-lighter">
+Copyright &copy; 2019 Udemy, Inc.
+</span>
+<div class="visible-xxs-block visible-xs-inline-block mb10"></div>
+</div>
+<div class="col-sm-5  col-xs-12 fx-c text-right footer__bottom__links">
+<ul class="links list-inline">
+<li>
+<a data-purpose="terms-link" href="/terms/">
+Terms
+</a>
+</li>
+<li>
+<a data-purpose="privacy-link" href="/terms/privacy/">
+Privacy Policy and Cookie Policy
+</a>
+</li>
+<li>
+<a data-purpose="support-link" href="/support/">
+Support
+</a>
+</li>
+<li class="footer__sitemap">
+<a class=" " data-purpose="footer.links.sitemap" href="/sitemap/">
+Sitemap
+</a>
+</li>
+<li class="footer__app-download-link ud-component--footer--mobile-app-download-link">
+<a data-purpose="app-download-link" href="https://udemy.app.link/garBkjjtDO" target="_blank">
+Get The App
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 col-xs-6 fx-rc footer__bottom__locale-selector">
+<div class="ud-component--footer--locale-dropdown text-right footer__locale-dropdown">
+<div class="dropup btn-group locale-dropdown">
+<button aria-label="Select language" data-purpose="locale-dropdown-btn" id="locale-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-sm btn-quaternary">
+<span>
+<span class="mr15">
+<span class="ml10 mr10 udi udi-globe"></span>
+<span class="mr10">English</span>
+</span>
+<span class="pos-a" style="right: 12px;">
+<span class="dropdown-caret udi udi-angle-down"></span>
+</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr-primary" />
+<div class="ud-component--footer--incentive-signup"></div>
+<div class="ud-component--footer--share-welcome-popup"></div>
+</footer>
+</div>
+</div>
+<script type="text/javascript" src="/staticx/udemy/js/webpack/entry-manifest.100d4086e9688867ba1a.js" defer></script>
+<script type="text/javascript" src="/staticx/udemy/js/webpack/entry-main-modern-vendor.f9983e15fdfeaaf6c5fb.js" defer></script>
+<script type="text/javascript" src="/staticx/udemy/js/webpack/jsi18n-en-us.c87dfdafa8add9cbf885.js" defer></script>
+<script type="text/javascript" src="/staticx/udemy/js/webpack/entry-main-modern.456e9e4d6cb8ce3fd0d7.js" defer></script>
+<div class="ud-app-loader ud-component--event-tracking--tracker-initializer" data-module-id="event-tracking" data-module-priority="-10"></div>
+</body>
+</html>
